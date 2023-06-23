@@ -1,4 +1,4 @@
-# weather-tracker
+# Weather Tracker
 
 ## Description
 Welcome to this one stop shop for a weather tracker. Planning a vacation? This tracker allows you to see a 5 day forcast of any location you provide!
