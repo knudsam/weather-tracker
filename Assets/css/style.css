@@ -1,135 +1,159 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-  label {
-    margin-bottom: 10px;
-  }
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  input[type="text"] {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  button[type="submit"] {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-  button[type="submit"]:hover {
-    background-color: #0069d9;
-  }
-  
-  #current-weather,
-  #forecast {
-    margin-top: 20px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  th,
-  td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .forecast-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .forecast-item p {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .forecast-icon {
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
-  }
-  
-  #search-history ul li button {
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
-    margin-left: 10px;
-  }
-  
-  .Search-item {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-  }
-  
-  #search-history ul li button:hover {
-    background-color: #0069d9;
-  }
+label {
+  margin-bottom: 10px;
+}
 
-  #current-weather img {
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
-  }
-  
-  #date-time {
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-  
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+#current-weather,
+#forecast {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.forecast-item p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.forecast-icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+#search-history ul li button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.Search-item {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+#search-history ul li button:hover {
+  background-color: #0069d9;
+}
+
+#current-weather img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+#date-time {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: #0069d9;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 20px);
+  background-image: url('/Assets/images/Weather-Icons.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+}
